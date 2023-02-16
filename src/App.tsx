@@ -1,15 +1,9 @@
-import bg from "./assets/pattern-background-desktop.svg";
 import hero from "./assets/illustration-hero.svg";
-import bgmobile from "./assets/pattern-background-mobile.svg";
 import icon from "./assets/icon-music.svg";
 
 function App() {
   return (
-    <div className="flex  justify-center items-center h-screen bg-[#e0e8ff]">
-      <div className="absolute h-screen">
-        <img src={bg} alt="" className="hidden lg:block" />
-        <img src={bgmobile} alt="" className="lg:hidden" />
-      </div>
+    <main className="flex justify-center items-center h-screen bg-[#e0e8ff] lg:bg-desktop-pattern bg-mobile-pattern bg-no-repeat bg-contain">
       <div className="relative w-[327px] h-[566px] lg:w-[450px] lg:h-[696px] bg-white rounded-3xl drop-shadow-[0px_35px_35px_rgba(56,42,225,0.05)]">
         <img src={hero} alt="" className="rounded-t-3xl" />
         <div className="p-[28px] lg:p-[44px]">
@@ -32,7 +26,9 @@ function App() {
                 $59.99/year
               </p>
             </div>
-            <p className="text-black underline text-sm lg:mr-2 hover:cursor-pointer hover:text-[#766cf1]">Change</p>
+            <p className="text-black underline text-sm lg:mr-2 hover:cursor-pointer hover:text-[#766cf1]">
+              Change
+            </p>
           </div>
           <button className="flex justify-center items-center rounded-xl bg-[#382ae1] h-[50px] w-[275px] lg:w-[360px] mt-[25px] lg:mt-[32px] font-extrabold drop-shadow-[0_15px_15px_rgba(56,42,225,0.35)] tracking-[0.001px] hover:bg-[#766cf1]">
             Proceed to Payment
@@ -42,7 +38,7 @@ function App() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
