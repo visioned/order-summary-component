@@ -5,7 +5,7 @@ import icon from "./assets/icon-music.svg";
 
 function App() {
   return (
-    <div className="flex  justify-center items-center h-screen bg-[#f8f9fe]">
+    <div className="flex  justify-center items-center h-screen bg-[#e0e8ff]">
       <div className="absolute h-screen">
         <img src={bg} alt="" className="hidden lg:block" />
         <img src={bgmobile} alt="" className="lg:hidden" />
@@ -32,12 +32,12 @@ function App() {
                 $59.99/year
               </p>
             </div>
-            <p className="text-black underline text-sm lg:mr-2">Change</p>
+            <p className="text-black underline text-sm lg:mr-2 hover:cursor-pointer hover:text-[#766cf1]">Change</p>
           </div>
-          <button className="flex justify-center items-center rounded-xl bg-[#382ae1] h-[50px] w-[275px] lg:w-[360px] mt-[25px] lg:mt-[32px] font-extrabold drop-shadow-[0_15px_15px_rgba(56,42,225,0.35)] tracking-[0.001px]">
+          <button className="flex justify-center items-center rounded-xl bg-[#382ae1] h-[50px] w-[275px] lg:w-[360px] mt-[25px] lg:mt-[32px] font-extrabold drop-shadow-[0_15px_15px_rgba(56,42,225,0.35)] tracking-[0.001px] hover:bg-[#766cf1]">
             Proceed to Payment
           </button>
-          <p className="text-gray-500 text-[15px] text-center pt-[24px] lg:pt-[32px] font-bold">
+          <p className="text-gray-500 text-[15px] text-center pt-[24px] lg:pt-[32px] font-bold hover:text-gray-800 cursor-pointer">
             Cancel Order
           </p>
         </div>
